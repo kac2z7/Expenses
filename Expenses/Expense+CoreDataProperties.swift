@@ -7,6 +7,7 @@
 //
 //
 
+
 import Foundation
 import CoreData
 
@@ -22,3 +23,4 @@ extension Expense {
     @NSManaged public var rawDate: NSDate?
 
 }
+

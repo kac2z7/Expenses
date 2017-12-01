@@ -6,6 +6,7 @@
 //  Copyright © 2017 Tech Innovator. All rights reserved.
 //
 
+
 import UIKit
 
 class SingleExpenseViewController: UIViewController {
@@ -53,6 +54,20 @@ class SingleExpenseViewController: UIViewController {
         let amount = Double(amountText) ?? 0.0
         let date = datePicker.date
         
+        if let expense = Expense(name: name, amount: amount, date: date){
+            do{
+                let managedContext = expense.managedObjectContext
+
+                try managedContext?.save()
+                
+                self.navigationController?.popViewController(animated: true)
+            }
+            catch{
+                print("Context could not be saved")
+
+            }
+        }
+        
         var expense: Expense?
         
         if let existingExpense = existingExpense{
@@ -85,3 +100,12 @@ extension SingleExpenseViewController: UITextFieldDelegate {
         return true
     }
 }
+
+ 
+ 
+ 
+ 
+ 
+
+
+

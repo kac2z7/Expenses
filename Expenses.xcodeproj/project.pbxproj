@@ -16,8 +16,6 @@
 		FEEEA2D41FD0B6A200D1F554 /* Expenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA2D21FD0B6A200D1F554 /* Expenses.xcdatamodeld */; };
 		FEEEA2D61FD0B6A200D1F554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEEA2D51FD0B6A200D1F554 /* Assets.xcassets */; };
 		FEEEA2D91FD0B6A200D1F554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEEEA2D71FD0B6A200D1F554 /* LaunchScreen.storyboard */; };
-		FEEEA2E41FD0B6A200D1F554 /* ExpensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA2E31FD0B6A200D1F554 /* ExpensesTests.swift */; };
-		FEEEA2EF1FD0B6A300D1F554 /* ExpensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA2EE1FD0B6A300D1F554 /* ExpensesUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +48,7 @@
 		FEEEA2D81FD0B6A200D1F554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEEEA2DA1FD0B6A200D1F554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEEEA2DF1FD0B6A200D1F554 /* ExpensesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEEEA2E31FD0B6A200D1F554 /* ExpensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTests.swift; sourceTree = "<group>"; };
-		FEEEA2E51FD0B6A200D1F554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEEEA2EA1FD0B6A300D1F554 /* ExpensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEEEA2EE1FD0B6A300D1F554 /* ExpensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUITests.swift; sourceTree = "<group>"; };
-		FEEEA2F01FD0B6A300D1F554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				FEEEA2CA1FD0B6A200D1F554 /* Expenses */,
-				FEEEA2E21FD0B6A200D1F554 /* ExpensesTests */,
-				FEEEA2ED1FD0B6A300D1F554 /* ExpensesUITests */,
 				FEEEA2C91FD0B6A200D1F554 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,24 +109,6 @@
 				FEEEA2D21FD0B6A200D1F554 /* Expenses.xcdatamodeld */,
 			);
 			path = Expenses;
-			sourceTree = "<group>";
-		};
-		FEEEA2E21FD0B6A200D1F554 /* ExpensesTests */ = {
-			isa = PBXGroup;
-			children = (
-				FEEEA2E31FD0B6A200D1F554 /* ExpensesTests.swift */,
-				FEEEA2E51FD0B6A200D1F554 /* Info.plist */,
-			);
-			path = ExpensesTests;
-			sourceTree = "<group>";
-		};
-		FEEEA2ED1FD0B6A300D1F554 /* ExpensesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FEEEA2EE1FD0B6A300D1F554 /* ExpensesUITests.swift */,
-				FEEEA2F01FD0B6A300D1F554 /* Info.plist */,
-			);
-			path = ExpensesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEEEA2E41FD0B6A200D1F554 /* ExpensesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEEEA2EF1FD0B6A300D1F554 /* ExpensesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

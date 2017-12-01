@@ -14,7 +14,6 @@ class ExpensesViewController: UIViewController {
     @IBOutlet weak var expensesTableView: UITableView!
     
     let dateFormatter = DateFormatter()
-    
     var expenses = [Expense]()
     
     override func viewDidLoad() {
@@ -35,7 +34,6 @@ class ExpensesViewController: UIViewController {
         
         do{
             expenses = try managedContext.fetch(fetchRequest)
-            
             expensesTableView.reloadData()
         } catch{
             print("fetch could not be performed")
@@ -111,3 +109,9 @@ extension ExpensesViewController: UITableViewDelegate {
         performSegue(withIdentifier: "showExpense", sender: self)
     }
 }
+ 
+ 
+
+
+
+
