@@ -19,6 +19,8 @@ class SingleExpenseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Add Expense"
+
         nameTextField.delegate = self
         amountTextField.delegate = self
         
@@ -37,6 +39,12 @@ class SingleExpenseViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan( _ touches: Set<UITouch>, with event: UIEvent? )
+    {
+        nameTextField.resignFirstResponder()
+        amountTextField.resignFirstResponder()
     }
     
     @IBAction func saveExpense(_ sender: Any) {
